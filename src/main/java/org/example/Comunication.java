@@ -93,18 +93,26 @@ public class Comunication {
         HttpEntity<User> requestEntity = new HttpEntity<>(user, headers);
 
         ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
-//        if (responseEntity.getStatusCode() == HttpStatus.CREATED) {
-            String responseBody = responseEntity.getBody();
-            System.out.println("Response body: " + responseBody);
-//        } else {
-//            System.out.println("Failed to save user.");
-//        }
-
+        String responseBody = responseEntity.getBody();
+        System.out.println("Response body: " + responseBody);
         return responseEntity;
     }
 
-    public void dleteUser(Long id){
+    public ResponseEntity<String> updateUser(User updatedUser) {
 
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.add(HttpHeaders.COOKIE, sessionId);
+        HttpEntity<User> requestEntity = new HttpEntity<>(updatedUser, headers);
+        ResponseEntity<String> responseEntity = restTemplate.exchange(URL, HttpMethod.PUT, requestEntity, String.class);
+        String responseBody = responseEntity.getBody();
+        System.out.println("Response body: " + responseBody);
+        return responseEntity;
+    }
+
+
+
+    public void dleteUser(Long id){
     }
 
 }

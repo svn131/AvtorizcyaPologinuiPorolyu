@@ -46,5 +46,16 @@ public class App {
         System.out.println("222222222222222222222222222222222222222222222");
 
 
+        User updatedUser = new User();
+        updatedUser.setId(3L);
+        updatedUser.setName("Thomas");
+        updatedUser.setLastName("Shelby");
+        updatedUser.setAge((byte) 30);
+
+        comunication.updateUser(updatedUser);
+
+        System.out.println("333333333333333333333333333333333333333333333333333333333333333");
+
+
     }
 }
