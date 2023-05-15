@@ -16,11 +16,5 @@ public class MyConfig {
         return new RestTemplate();
     }
 
-//    @Bean
-//    public RequestContextFilter requestContextFilter() {
-//        return new RequestContextFilter();
-//    }
-
-
-
 }
+
