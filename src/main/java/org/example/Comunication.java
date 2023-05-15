@@ -65,8 +65,42 @@ public class Comunication {
 
 
 
-    public void saveUsr(User user){
+//    public void saveUser(User user){
+//
+//    }
 
+//    public String saveUser(User user) {
+//        String url = URL;
+//        HttpHeaders headers = new HttpHeaders();
+//        headers.setContentType(MediaType.APPLICATION_JSON);
+//        headers.add(HttpHeaders.COOKIE, sessionId);
+//        HttpEntity<User> requestEntity = new HttpEntity<>(user, headers);
+//
+//        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
+//        if (responseEntity.getStatusCode() == HttpStatus.CREATED) {
+//            return responseEntity.getBody();
+//        } else {
+//            return null;
+//        }
+//    }
+
+
+    public ResponseEntity<String> saveUser(User user) {
+        String url = URL;
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.add(HttpHeaders.COOKIE, sessionId);
+        HttpEntity<User> requestEntity = new HttpEntity<>(user, headers);
+
+        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
+//        if (responseEntity.getStatusCode() == HttpStatus.CREATED) {
+            String responseBody = responseEntity.getBody();
+            System.out.println("Response body: " + responseBody);
+//        } else {
+//            System.out.println("Failed to save user.");
+//        }
+
+        return responseEntity;
     }
 
     public void dleteUser(Long id){

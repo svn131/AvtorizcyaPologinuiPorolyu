@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de4d4937-a4b6-49d3-ad8f-f8a82006c5b3" name="Changes" comment="Рабочий с одним методом">
+    <list default="true" id="de4d4937-a4b6-49d3-ad8f-f8a82006c5b3" name="Changes" comment="Рабочий получаем ид сесии с сервера каты и с репонт ентити листы и сесиюИд суюем уже в следующий пока не доделанный метод">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Comunication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Comunication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/configuration/MyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684158736595</updated>
-      <workItem from="1684158737741" duration="9247000" />
+      <workItem from="1684158737741" duration="10932000" />
     </task>
     <task id="LOCAL-00001" summary="Рабочий с одним методом">
       <created>1684162175038</created>
@@ -99,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684162175038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Рабочий получаем ид сесии с сервера каты и с репонт ентити листы и сесиюИд суюем уже в следующий пока не доделанный метод">
+      <created>1684170418233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684170418233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +111,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Рабочий с одним методом" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рабочий с одним методом" />
+    <MESSAGE value="Рабочий получаем ид сесии с сервера каты и с репонт ентити листы и сесиюИд суюем уже в следующий пока не доделанный метод" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рабочий получаем ид сесии с сервера каты и с репонт ентити листы и сесиюИд суюем уже в следующий пока не доделанный метод" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
