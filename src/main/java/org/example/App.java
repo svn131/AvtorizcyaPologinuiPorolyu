@@ -56,6 +56,9 @@ public class App {
 
         System.out.println("333333333333333333333333333333333333333333333333333333333333333");
 
+        comunication.deleteUser(3L);
+
+        System.out.println("FINISH");
 
     }
 }

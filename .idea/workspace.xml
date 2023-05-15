@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de4d4937-a4b6-49d3-ad8f-f8a82006c5b3" name="Changes" comment="Получилось первые 6 цифр">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="de4d4937-a4b6-49d3-ad8f-f8a82006c5b3" name="Changes" comment="Получилось первые 12 цифр">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Comunication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Comunication.java" afterDir="false" />
     </list>
@@ -87,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684158736595</updated>
-      <workItem from="1684158737741" duration="11729000" />
+      <workItem from="1684158737741" duration="12150000" />
     </task>
     <task id="LOCAL-00001" summary="Рабочий с одним методом">
       <created>1684162175038</created>
@@ -110,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684172061387</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Получилось первые 12 цифр">
+      <created>1684172782874</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684172782874</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +126,8 @@
     <MESSAGE value="Рабочий с одним методом" />
     <MESSAGE value="Рабочий получаем ид сесии с сервера каты и с репонт ентити листы и сесиюИд суюем уже в следующий пока не доделанный метод" />
     <MESSAGE value="Получилось первые 6 цифр" />
-    <option name="LAST_COMMIT_MESSAGE" value="Получилось первые 6 цифр" />
+    <MESSAGE value="Получилось первые 12 цифр" />
+    <option name="LAST_COMMIT_MESSAGE" value="Получилось первые 12 цифр" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

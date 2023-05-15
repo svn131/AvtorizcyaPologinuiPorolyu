@@ -1,15 +1,13 @@
 package org.example;
 
 
-import jakarta.servlet.http.HttpServletRequest;
+
 import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
@@ -25,9 +23,6 @@ public class Comunication {
     private String sessionId = "";
 
 
-
-
-
     public ResponseEntity<List<User>> showAllUser() {
         ResponseEntity<List<User>> responseEntity = restTemplate.exchange(URL, HttpMethod.GET, null, new ParameterizedTypeReference<List<User>>() {});
         HttpHeaders headers = responseEntity.getHeaders();
@@ -38,18 +33,6 @@ public class Comunication {
     }
 
 
-//    public List<User> showAllUser(){
-//
-//        ResponseEntity<List<User>> responseEntity = restTemplate.exchange(URL, HttpMethod.GET, null, new ParameterizedTypeReference<List<User>>() {
-//        });
-//        List<User> allUserList = responseEntity.getBody();
-//        return allUserList;
-//    }
-
-
-//    public User getUser(Long id){
-//        return null;
-//    }
 
     public User getUser(Long id) {
         HttpHeaders headers = new HttpHeaders();
@@ -63,26 +46,6 @@ public class Comunication {
     }
 
 
-
-
-//    public void saveUser(User user){
-//
-//    }
-
-//    public String saveUser(User user) {
-//        String url = URL;
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.setContentType(MediaType.APPLICATION_JSON);
-//        headers.add(HttpHeaders.COOKIE, sessionId);
-//        HttpEntity<User> requestEntity = new HttpEntity<>(user, headers);
-//
-//        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.POST, requestEntity, String.class);
-//        if (responseEntity.getStatusCode() == HttpStatus.CREATED) {
-//            return responseEntity.getBody();
-//        } else {
-//            return null;
-//        }
-//    }
 
 
     public ResponseEntity<String> saveUser(User user) {
@@ -112,7 +75,18 @@ public class Comunication {
 
 
 
-    public void dleteUser(Long id){
+    public ResponseEntity<String> deleteUser(Long userId) {
+        String url = URL + "/" + userId;
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.add(HttpHeaders.COOKIE, sessionId);
+        HttpEntity<String> requestEntity = new HttpEntity<>(headers);
+        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.DELETE, requestEntity, String.class);
+        String responseBody = responseEntity.getBody();
+        System.out.println("Response body: " + responseBody);
+        return responseEntity;
     }
+
+
 
 }
